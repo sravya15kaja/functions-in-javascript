@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // greet function
+        var a=prompt("Enter your Name");
+        function greet(a="Dear"){
+            console.log("Hello"+" "+ a +" " +"wellcome");
+        }
+        greet(a)
+        // sum funtion
+        var b=+prompt("Enter b value");
+        var c=+prompt("Enter c value");
+        function sum(b,c){
+            console.log("sum of",+b,"+",+c,"is",b+c);
+        }
+        sum(b,c)
+        // square function
+        var d=+prompt("enter value for square");
+        function squ(d){
+            console.log("square of",+d,"is",d*d);            
+        }
+        squ(d)
+        // average function
+        var e=[1,2,3,4,5,6,7,8,9];
+        avg=0;
+        function average(){
+        for(i=0;i<=e.length-1;i++){
+            console.log(e[i]);
+            avg+=e[i];
+            result=avg/e.length;
+        }
+        console.log("sum of the numbers is ",avg);
+        console.log("The average is",result);
+        }
+        average()  
+    //Vowels
+    function findVowels() {
+  const str = prompt("Enter a string:");
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  const foundVowels = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      foundVowels.push(str[i]);
+    }
+  }
+
+  if (foundVowels.length > 0) {
+    console.log("Vowels found:", foundVowels.join(", "));
+  } else {
+    console.log("No vowels found.");
+  }
+}
+findVowels();
+    
+    // celsius
+        var c,f;
+        temp=+prompt("enter the tempeture");
+        scale=prompt("enter the scale in caps C or F ");
+        function fun ( temp,scale){
+        if(scale== "C"){
+            c=(temp-32)*5/9;
+            console.log(" The celsius of",temp,"is",c);  
+        }
+        else if(scale=="F"){
+            f=(temp *5/9)+32;
+            console.log(" The Fahrenheit of",temp,"is",f);
+        }
+        else{
+            console.log("your entered is invalid");
+            
+        }}
+        fun(temp,scale)
+
+
+
+    </script>
+</body>
+</html>
